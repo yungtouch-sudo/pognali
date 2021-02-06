@@ -1,0 +1,356 @@
+.main__background {
+    background-image: url("../img/main_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 413px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/boy_mobile.png");
+        background-repeat: no-repeat;
+        width: 192px;
+        height: 255px;
+        bottom: 0px;
+        right: 15%;
+    }
+}
+
+.main__title {
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.main__menu {
+    display: flex;
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.main__comment {
+    position: relative;
+    background-color: #161c35;
+    min-height: 300px;
+    z-index: 1;
+}
+
+.main__review-text {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0;
+    width: 75%;
+}
+
+.main__review-client {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0;
+    width: 75%;
+}
+
+.main__review {
+    padding: 45px 25px 45px 25px;
+}
+
+.main__review-client {
+    padding-top: 19px;
+}
+
+.main__step {
+    background-color: #192144;
+    margin-top: -95px;
+    padding-bottom: 44px;
+
+}
+
+.main__step-wrapper {
+    z-index: 2;
+    position: relative;
+}
+
+.main__step-list {
+    padding-left: 0;
+    margin: 0;
+    counter-reset: myCounter;
+}
+
+.main__step-item {
+    height: 85px;
+    padding: 23px;
+    list-style: none;
+    position: relative;
+
+    &::before {
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        position: absolute;
+        top: 23px;
+        right: 20px;
+    }
+
+    &:nth-child(1) {
+        background-color: #ff8d30;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &:nth-child(2) {
+        background-color: #ffa530;
+        margin-top: -6px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &:nth-child(3) {
+        background-color: #ffbd30;
+        margin-top: -7px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &:nth-child(4) {
+        background-color: #ffd74b;
+        margin-top: -8px;
+        border-radius: 8px;
+        height: 80px;
+    }
+}
+
+.main__step-text {
+    color: #161c35;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    margin: 0;
+    width: 80%;
+}
+
+@media (min-width: 720px) {
+    .main__background {
+        min-height: 450px;
+    }
+
+    .main__title {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main__title {
+        font-size: 60px;
+        line-height: 70px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__menu {
+        display: none;
+    }
+
+    .main__background {
+        min-height: 894px;
+
+        &::after {
+            background-image: url(../img/boy_tablet.png);
+            background-repeat: no-repeat;
+            width: 372px;
+            height: 451px;
+            bottom: 140px;
+            right: 15%;
+        }
+    }
+
+    .main__review-text {
+        font-size: 28px;
+        line-height: 33px;
+        width: 50%;
+    }
+
+    .main__comment {
+        background-color: transparent;
+    }
+
+    .main__review-client {
+        font-size: 21px;
+        line-height: 25px;
+        padding-top: 50px;
+        width: 55%;
+    }
+
+    .main__review {
+        position: absolute;
+        top: -586px;
+        left: 6%;
+    }
+
+    .main__step-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__step-item {
+        min-height: 140px;
+        width: 50%;
+        padding: 27px 35px 35px 35px;
+
+        &::before {
+            font-size: 30px;
+            top: 90px;
+            left: 33px;
+        }
+
+    }
+
+    .main__step-text {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .main__step-item:nth-child(1) {
+        width: 52%;
+        margin-top: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+
+    .main__step-item:nth-child(2) {
+        margin-top: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -2%;
+    }
+
+    .main__step-item:nth-child(3) {
+        width: 52%;
+        margin-top: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+
+    .main__step-item:nth-child(4) {
+        margin-top: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-left: -2%;
+    }
+
+    .main__step {
+        margin-top: -440px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main__title {
+        text-align: left;
+        margin: 0;
+        padding: 92px 65px 92px 65px;
+        width: 30%;
+    }
+
+    .main__background {
+        min-height: 640px;
+
+        &::after {
+            background-image: url(../img/boy_desktop.png);
+            width: 431px;
+            height: 640px;
+            bottom: 0;
+            right: 28%;
+        }
+    }
+
+    .main__review {
+        padding: 0;
+        top: -536px;
+        right: 44px;
+    }
+
+    .main__review-text {
+        width: 23%;
+        margin-left: auto;
+    }
+
+    .main__review-client {
+        width: 23%;
+        margin-left: auto;
+    }
+
+    .main__step {
+        margin-top: -530px;
+    }
+
+    .main__step-list {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .main__step-item {
+        min-height: 107px;
+
+        &::before {
+            top: 28px;
+            right: 33px;
+            text-align: right;
+        }
+    }
+
+    .main__step-item:nth-child(1) {
+        width: 25%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .main__step-item:nth-child(2) {
+        width: 25%;
+        margin-left: -1%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .main__step-item:nth-child(3) {
+        width: 25%;
+        margin-left: -1%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .main__step-item:nth-child(4) {
+        width: 25%;
+        margin-left: -1%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}

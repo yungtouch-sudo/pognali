@@ -1,0 +1,221 @@
+.tariffs {
+    background-color: #edeff6;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: -30px;
+    z-index: 7;
+    position: relative;
+    min-height: 480px;
+}
+
+.tariffs__wrapper {
+    padding-top: 80px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/tariffs-decor.png");
+        width: 99px;
+        height: 99px;
+        top: 69px;
+        right: 27px;
+    }
+}
+
+.tariffs__title {
+    width: 60%;
+    padding-left: 25px;
+}
+
+.tariffs__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    font-family: inherit;
+    color: #444444;
+    margin: 0;
+}
+
+.tariffs__business {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #192144;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.tariffs__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 44px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    counter-reset: myCounter;
+}
+
+.tariffs__item {
+    border-top: 2px solid #e1e3ea;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+
+    &:last-child {
+        border-bottom: 2px solid #e1e3ea;
+    }
+
+    &::before {
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        position: absolute;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: center;
+        width: 34px;
+        height: 34px;
+        padding-top: 10px;
+        background-color: #ffa530;
+        border-radius: 50%;
+        top: 15px;
+        right: -24px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .tariffs {
+        margin-top: -50px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        min-height: 604px;
+    }
+
+    .tariffs__wrapper {
+        padding-top: 118px;
+
+        &::after {
+            top: unset;
+            bottom: -40px;
+            right: 84px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 198px;
+            height: 285px;
+            border-radius: 20px;
+            background-color: #e2e5f2;
+            top: 197px;
+            right: 39px;
+            opacity: 0.6;
+        }
+    }
+
+    .tariffs__title {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .tariffs__text {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .tariffs__item {
+        min-height: 65px;
+        padding-top: 15px;
+        padding-bottom: 17px;
+
+        &::before {
+            font-size: 28px;
+            line-height: 28px;
+            width: 67px;
+            height: 67px;
+            padding-top: 17px;
+            right: unset;
+            left: -91px;
+            top: 0px;
+        }
+    }
+
+    .tariffs__option {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tariffs__list {
+        padding: 75px 33px 55px 91px;
+    }
+
+    .tariffs__business {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 89px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 67px;
+            height: 67px;
+            background-color: #e2e5f2;
+            background-image: url("../img/tariffs-link.png");
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            top: -21px;
+            left: 0;
+            background-position: center;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .tariffs {
+        min-height: 800px;
+    }
+
+    .tariffs__wrapper {
+        padding-top: 150px;
+
+        &::before {
+            width: 444px;
+            height: 300px;
+            border-radius: 20px;
+            top: 281px;
+            right: unset;
+            opacity: 0.6;
+            left: 52vw;
+        }
+
+        &::after {
+            background-image: url(../img/tariffs-decor-d.png);
+            width: 198px;
+            height: 198px;
+            top: 337px;
+            bottom: unset;
+            right: 130px;
+        }
+    }
+
+    .tariffs__list {
+        padding: 137px 344px 56px 163px;
+    }
+
+    .tariffs__business {
+        padding-left: 160px;
+
+        &::after {
+            left: 71px;
+        }
+    }
+}

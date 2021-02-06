@@ -1,0 +1,194 @@
+.service {
+    position: relative;
+    background-color: #192144;
+    background-image: url("../img/about-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 353px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 10;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 33vw;
+        height: 133px;
+        background-color: #141b3b;
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg);
+        top: 0;
+        left: -6%;
+    }
+}
+
+.service__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.service__title {
+    padding-top: 25px;
+}
+
+.service__subtitle {
+    padding-top: 23px;
+}
+
+.service__text {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 18px;
+}
+
+.service__link {
+    display: none;
+}
+
+.service__content {
+    z-index: 1;
+    position: relative;
+}
+
+@media (min-width: $tablet-width) {
+    .service {
+        min-height: 735px;
+        background-image: none;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 213px;
+            border-radius: 20px;
+            background-color: #141b3b;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .service__wrapper {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../img/about-tablet.png");
+            width: 376px;
+            height: 548px;
+            top: 100px;
+            right: 1%;
+        }
+    }
+
+    .service__title {
+        padding-top: 90px;
+    }
+
+    .service__subtitle {
+        padding-top: 40px;
+        width: 50%;
+    }
+
+    .service__text {
+        font-size: 21px;
+        line-height: 25px;
+        width: 50%;
+        padding-top: 34px;
+    }
+
+    .service__content {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .service__link {
+        position: relative;
+        display: inline-block;
+        color: #1d2e5b;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        padding: 30px 120px 30px 30px;
+        text-decoration: none;
+        border-radius: 20px;
+        background-color: #ffd74b;
+        padding: 28px 128px 30px 30px;
+        margin-top: 50px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 10px solid #1d2e5b;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            top: 38px;
+            right: 33px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .service {
+        min-height: 830px;
+
+        &::before {
+            width: 213px;
+            height: 213px;
+            border-radius: 20px;
+            top: 150px;
+            left: 12%;
+        }
+    }
+
+    .service__wrapper::after {
+        background-image: url("../img/about-desktop.png");
+        width: 630px;
+        height: 665px;
+        top: unset;
+        bottom: -145px;
+        right: 4%;
+    }
+
+    .service__title {
+        padding-top: 207px;
+    }
+
+    .service__content {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+    .service__subtitle {
+        padding-top: 60px;
+        width: 55%;
+    }
+
+    .service__text {
+        width: 35%;
+    }
+
+    .service__link {
+        margin-top: 90px;
+    }
+}

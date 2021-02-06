@@ -1,0 +1,334 @@
+.directions {
+    position: relative;
+    z-index: 9;
+    min-height: 1016px;
+    background-color: #edeff6;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.directions__wrapper {
+    padding-top: 25px;
+}
+
+.directions__subtitle {
+    color: #444444;
+    padding-top: 20px;
+    width: 90%;
+}
+
+.directions__country {
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    color: #161c35;
+    margin: 0;
+}
+
+.directions__abstract {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    opacity: 0.3;
+    color: #444444;
+    margin: 0;
+}
+
+.directions__users {
+    position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    opacity: 0.3;
+    color: #444444;
+    margin-left: auto;
+    padding-left: 28px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/user_icon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        top: 8px;
+        left: 7px;
+    }
+}
+
+.directions__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.directions__item {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.directions__preview {
+    padding: 70px 25px 50px 25px;
+}
+
+.directions__info {
+    position: relative;
+    max-width: 270px;
+    min-height: 90px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    margin-top: -15px;
+    z-index: 1;
+    padding: 27px 23px 27px 23px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.directions__info--thailand::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/thailand_flag_m.png");
+    width: 35px;
+    height: 24px;
+    top: -12px;
+    left: 25px;
+}
+
+.directions__info--france::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/france_flag_m.png");
+    width: 35px;
+    height: 24px;
+    top: -12px;
+    left: 25px;
+}
+
+.directions__info--czech::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/czech_flag_m.png");
+    width: 35px;
+    height: 24px;
+    top: -12px;
+    left: 25px;
+}
+
+.directions__more {
+    position: relative;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: #1d2e5b;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #ffd74b;
+    padding: 21px 140px 21px 24px;
+    text-align: center;
+    margin-top: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 10px solid #1d2e5b;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        top: 25px;
+        right: 20px;
+
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .directions {
+        margin-top: -50px;
+        min-height: 1144px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        background-image: url("../img/flags-back.png");
+        background-repeat: no-repeat;
+        background-position-x: 92%;
+        background-position-y: 132px;
+    }
+
+    .directions__preview {
+        padding: 93px 35px 50px 35px;
+    }
+
+    .directions__subtitle {
+        padding-top: 60px;
+        width: 56%;
+    }
+
+    .directions__list {
+        padding: 47px 35px 20px 35px;
+    }
+
+    .directions__item {
+        display: flex;
+        justify-content: center;
+
+        &:first-child {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 141px;
+                height: 141px;
+                border-radius: 20px;
+                background-color: #e2e5f2;
+                top: -27px;
+                left: -34px;
+            }
+        }
+    }
+
+    .directions__info {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: 140px;
+        width: 432px;
+        max-width: 100%;
+        margin: 0;
+        order: 1;
+        padding: 27px 30px 20px 30px;
+        flex-direction: column;
+    }
+
+    .directions__img {
+        max-width: max-content;
+        height: 140px;
+    }
+
+    .directions__img-wrapper {
+        order: 2;
+    }
+
+    .directions__country {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .directions__abstract {
+        font-size: 20px;
+        padding-top: 9px;
+    }
+
+    .directions__users {
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 0;
+        text-align: left;
+        padding-top: 11px;
+        padding-left: 30px;
+
+        &::after {
+            width: 22px;
+            height: 22px;
+            top: 16px;
+            left: 0px;
+        }
+    }
+
+    .directions__info--thailand::after {
+        background-image: url("../img/thailand_flag_t-d.png");
+        width: 70px;
+        height: 47px;
+        top: 16px;
+        left: 398px;
+    }
+
+    .directions__info--france::after {
+        background-image: url("../img/france_flag-t-d.png");
+        width: 70px;
+        height: 47px;
+        top: 16px;
+        left: 398px;
+    }
+
+    .directions__info--czech::after {
+        background-image: url("../img/сzech_flag_t-d.png");
+        width: 70px;
+        height: 47px;
+        top: 16px;
+        left: 398px;
+    }
+
+    .directions__more {
+        padding: 25px 446px 28px 34px;
+        font-size: 24px;
+        line-height: 24px;
+        border-radius: 20px;
+
+        &::after {
+            top: 34px;
+            right: 34px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .directions {
+        min-height: 800px;
+        position: relative;
+    }
+
+    .directions__wrapper {
+        display: flex;
+        padding-top: 118px;
+        padding-right: 95px;
+        padding-left: 95px;
+    }
+
+    .directions__more {
+        position: absolute;
+        padding: 30px 100px 30px 30px;
+        top: 70%;
+        left: 864px;
+    }
+
+    .directions__list {
+        order: 1;
+        padding-top: 82px;
+    }
+
+    .directions__preview {
+        order: 2;
+        padding-left: 137px;
+    }
+
+    .directions__info {
+        width: 375px;
+    }
+
+    .directions__subtitle {
+        width: 78%;
+    }
+
+    .directions__info--thailand::after,
+    .directions__info--france::after,
+    .directions__info--czech::after {
+        top: 25px;
+        left: 340px
+    }
+}

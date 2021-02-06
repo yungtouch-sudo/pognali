@@ -1,0 +1,17 @@
+  /*Blogger Sans Regular*/
+  @font-face {
+    font-family: "Blogger Sans";
+    src: url("../fonts/BloggerSansRegular.woff2") format("woff2"),
+      url("../fonts/BloggerSansRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /*Blogger Sans Bold*/
+  @font-face {
+    font-family: "Blogger Sans";
+    src: url("../fonts/BloggerSansBold.woff2") format("woff2"),
+      url("../fonts/BloggerSansBold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+  }

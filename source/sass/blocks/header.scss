@@ -1,0 +1,131 @@
+.header {
+    padding-top: 10px;
+    background-color: #161c36;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__menu {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .header {
+        padding-top: 40px;
+    }
+
+    .header__logo {
+        margin-top: 3px;
+    }
+
+    .header__wrapper {
+        align-items: start;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .header__menu-tel {
+        display: none;
+    }
+
+    .header__menu-mail {
+        display: none;
+    }
+
+    .header__menu-authorization {
+        display: inline-block;
+        font-size: 20px;
+        padding: 8px 18px 7px 19px;
+        margin-top: 3px;
+    }
+
+    .header__btn {
+        margin-left: -6px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .header {
+        padding-top: 45px;
+        padding-bottom: 5px;
+    }
+
+    .header__wrapper {
+        align-items: center;
+        justify-content: start;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+        margin-left: 10%;
+    }
+
+    .header__nav-list {
+        position: relative;
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #ffffff;
+
+            top: 13px;
+            left: -93px;
+
+        }
+    }
+
+    .header__nav-item {
+        padding: 0px 18px 0px 18px;
+    }
+
+    .header__nav-link {
+        font-family: inherit;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .header__menu-tel {
+        display: block;
+    }
+
+    .header__menu-mail {
+        display: block;
+    }
+
+    .header__menu-authorization {
+        padding: 9px 28px 8px 29px;
+        margin-top: 0;
+    }
+}
