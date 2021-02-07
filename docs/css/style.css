@@ -346,6 +346,8 @@ img {
   width: 40px;
   height: 40px;
   position: relative; }
+  .tel:hover::before {
+    background-color: #f26926; }
   .tel::before {
     content: "";
     position: absolute;
@@ -369,6 +371,8 @@ img {
   width: 40px;
   height: 40px;
   position: relative; }
+  .mail:hover::before {
+    background-color: #ff8d30; }
   .mail::before {
     content: "";
     position: absolute;
@@ -399,9 +403,11 @@ img {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 38px 6px 38px;
+  padding: 5px 38px 5px 38px;
   border-radius: 20px;
   background-color: #ffd74b; }
+  .authorization:hover {
+    background-color: #ffbd30; }
 
 @media (min-width: 1440px) {
   .mail {
@@ -648,6 +654,10 @@ img {
     min-height: 450px; }
   .main__title {
     padding-top: 50px; } }
+
+@media (min-width: 465px) {
+  .main__review {
+    padding-top: 70px; } }
 
 @media (min-width: 768px) {
   .main__title {
@@ -939,6 +949,10 @@ img {
   z-index: 1;
   position: relative; }
 
+@media (min-width: 465px) {
+  .service__title {
+    padding-top: 56px; } }
+
 @media (min-width: 768px) {
   .service {
     min-height: 735px;
@@ -996,6 +1010,8 @@ img {
     background-color: #ffd74b;
     padding: 28px 128px 30px 30px;
     margin-top: 50px; }
+    .service__link:hover {
+      background-color: #ffbd30; }
     .service__link::after {
       content: "";
       position: absolute;
@@ -1168,6 +1184,8 @@ img {
   padding: 21px 140px 21px 24px;
   text-align: center;
   margin-top: 20px; }
+  .directions__more:hover {
+    background-color: #ffbd30; }
   .directions__more::after {
     content: "";
     position: absolute;
@@ -1560,6 +1578,8 @@ img {
   background-color: #ffd74b;
   text-decoration: none;
   position: relative; }
+  .companions__more:hover {
+    background-color: #ffbd30; }
   .companions__more::after {
     content: "";
     position: absolute;
@@ -1571,8 +1591,12 @@ img {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    top: 29px;
+    top: 28px;
     right: 20px; }
+
+@media (min-width: 465px) {
+  .companions__wrapper {
+    padding-top: 115px; } }
 
 @media (min-width: 768px) {
   .companions {
@@ -1668,7 +1692,8 @@ img {
     position: absolute;
     bottom: 0;
     margin-left: 70px;
-    padding: 31px 95px 31px 31px; }
+    padding: 31px 95px 31px 31px;
+    z-index: 1; }
   .companions__content {
     width: 48%;
     padding-left: 71px; }
@@ -1728,6 +1753,8 @@ img {
   color: #192144;
   text-decoration: none;
   padding-left: 25px; }
+  .tariffs__business:hover {
+    opacity: 0.7; }
 
 .tariffs__list {
   padding-left: 0;
@@ -1820,6 +1847,8 @@ img {
     line-height: 20px;
     padding-left: 89px;
     position: relative; }
+    .tariffs__business:hover::after {
+      opacity: 0.7; }
     .tariffs__business::after {
       content: "";
       position: absolute;
@@ -1875,6 +1904,9 @@ img {
 .feedback__content {
   padding-left: 30px;
   padding-right: 30px; }
+
+.feedback__title {
+  text-align: center; }
 
 .feedback__subtitle {
   text-align: center;
@@ -2035,7 +2067,7 @@ img {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    top: 24px;
+    top: 27px;
     right: 21px; }
 
 @media (min-width: 768px) {
@@ -2093,6 +2125,8 @@ img {
     font-size: 28px;
     line-height: 28px;
     margin-top: 35px; }
+    .feedback__contacts a:hover {
+      color: #ffbd30; }
   .feedback__contacts-tel::after {
     width: 68px;
     height: 68px;
@@ -2218,6 +2252,9 @@ img {
   border: 3px solid #192144;
   background-color: #ffd74b;
   margin-top: 30px; }
+  .map__link:hover {
+    background-color: #192144;
+    color: #ffffff; }
   .map__link::after {
     content: "";
     position: absolute;
@@ -2227,8 +2264,12 @@ img {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    top: 24px;
-    right: 21px; }
+    top: 26px;
+    right: 15px; }
+
+@media (min-width: 407px) {
+  .map__text::after {
+    top: -12px; } }
 
 @media (min-width: 768px) {
   .map {
@@ -2313,6 +2354,8 @@ img {
   background-color: #ffd74b;
   border-radius: 50%;
   display: inline-block; }
+  .footer__social-link:hover {
+    background-color: #ffbd30; }
 
 .footer__social {
   display: -webkit-box;
