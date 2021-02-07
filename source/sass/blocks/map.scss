@@ -69,6 +69,11 @@
     background-color: #ffd74b;
     margin-top: 30px;
 
+    &:hover {
+        background-color: #192144;
+        color: #ffffff;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -78,8 +83,14 @@
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
-        top: 24px;
-        right: 21px;
+        top: 26px;
+        right: 15px;
+    }
+}
+
+@media (min-width: 407px) {
+    .map__text::after {
+        top: -12px;
     }
 }
 

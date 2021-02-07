@@ -43,6 +43,10 @@ img {
   height: 40px;
   position: relative;
 
+  &:hover::before {
+    background-color: #f26926;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -72,6 +76,10 @@ img {
   width: 40px;
   height: 40px;
   position: relative;
+
+  &:hover::before {
+    background-color: #ff8d30;
+  }
 
   &::before {
     content: "";
@@ -107,9 +115,13 @@ img {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 38px 6px 38px;
+  padding: 5px 38px 5px 38px;
   border-radius: 20px;
   background-color: #ffd74b;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
 }
 
 @media (min-width: $desktop-width) {

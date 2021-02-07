@@ -56,6 +56,12 @@
     position: relative;
 }
 
+@media (min-width: 465px) {
+    .service__title {
+        padding-top: 56px;
+    }
+}
+
 @media (min-width: $tablet-width) {
     .service {
         min-height: 735px;
@@ -130,6 +136,10 @@
         background-color: #ffd74b;
         padding: 28px 128px 30px 30px;
         margin-top: 50px;
+
+        &:hover {
+            background-color: #ffbd30;
+        }
 
         &::after {
             content: "";

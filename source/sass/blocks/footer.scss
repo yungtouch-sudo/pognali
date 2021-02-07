@@ -13,7 +13,6 @@
     padding-top: 38px;
 }
 
-.footer__logo {}
 
 .footer__social-link {
     width: 45px;
@@ -21,6 +20,10 @@
     background-color: #ffd74b;
     border-radius: 50%;
     display: inline-block;
+
+    &:hover {
+        background-color: #ffbd30;
+    }
 }
 
 .footer__social {

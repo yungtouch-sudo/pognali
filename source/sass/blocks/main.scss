@@ -161,6 +161,12 @@
     }
 }
 
+@media (min-width: 465px) {
+    .main__review {
+        padding-top: 70px
+    }
+}
+
 @media (min-width: $tablet-width) {
     .main__title {
         font-size: 60px;

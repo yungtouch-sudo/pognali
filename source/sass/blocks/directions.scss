@@ -141,6 +141,10 @@
     text-align: center;
     margin-top: 20px;
 
+    &:hover {
+        background-color: #ffbd30;
+    }
+
     &::after {
         content: "";
         position: absolute;

@@ -47,6 +47,10 @@
     color: #192144;
     text-decoration: none;
     padding-left: 25px;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .tariffs__list {
@@ -162,6 +166,10 @@
         line-height: 20px;
         padding-left: 89px;
         position: relative;
+
+        &:hover::after {
+            opacity: 0.7;
+        }
 
         &::after {
             content: "";

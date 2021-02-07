@@ -252,6 +252,10 @@
     text-decoration: none;
     position: relative;
 
+    &:hover {
+        background-color: #ffbd30;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -263,8 +267,14 @@
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
-        top: 29px;
+        top: 28px;
         right: 20px;
+    }
+}
+
+@media (min-width: 465px) {
+    .companions__wrapper {
+        padding-top: 115px;
     }
 }
 
@@ -396,6 +406,7 @@
         bottom: 0;
         margin-left: 70px;
         padding: 31px 95px 31px 31px;
+        z-index: 1;
     }
 
     .companions__content {
